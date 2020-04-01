@@ -1,0 +1,58 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <include layout="@layout/l_top"></include>
+    <Button
+        android:id="@+id/btn1"
+        android:text="内部类内存泄漏"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:id="@+id/btn2"
+        android:text="内部类Handler内存泄漏"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:id="@+id/btn3"
+        android:text="内部类静态实例内存泄漏"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:id="@+id/btn4"
+        android:text="Context内存泄漏"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <!--使用demins，根据屏幕适配控件大小-->
+    <Button
+        android:id="@+id/btn5"
+        android:text="ShowPicture"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height">
+    </Button>
+
+    <Button
+        android:id="@+id/btn6"
+        android:text="Asynctask"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height">
+    </Button>
+
+    <!--使用ViewStub延时加载页面布局-->
+    <ViewStub
+        android:id="@+id/vs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/l_foot">
+    </ViewStub>
+
+</LinearLayout>
